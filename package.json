@@ -1,0 +1,23 @@
+{
+    "name": "drift-experiment",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "start": "tsx src/index.ts",
+        "test-one": "tsx src/index.ts --strategy incremental --runs 1 --iterations 5",
+        "test-all": "tsx src/index.ts --strategy all --runs 1 --iterations 5",
+        "pilot": "tsx src/index.ts --strategy all --runs 1 --iterations 15",
+        "compare": "tsx src/index.ts --strategy all --runs 3 --iterations 15",
+        "full": "tsx src/index.ts --strategy all --runs 3 --iterations 30"
+    },
+    "dependencies": {
+        "commander": "^11.1.0",
+        "dotenv": "^17.2.3",
+        "openai": "^4.20.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.10.0",
+        "tsx": "^4.6.0",
+        "typescript": "^5.3.0"
+    }
+}

@@ -1,0 +1,608 @@
+  [7/15] Applying patch: "Remove the rigid subsection structure and allow ea..."
+          Drift: 25 | Retries: 0 (Vocab:16, Style:9)
+  [8/15] Applying patch: "Add a comprehensive glossary section defining all ..."
+          Drift: 46 | Retries: 0 (Vocab:26, Templ:5, Style:15)
+  [9/15] Applying patch: "Restructure the document to group content by stake..."
+          Drift: 48 | Retries: 0 (Vocab:28, Templ:5, Style:15)
+  [10/15] Applying patch: "Rewrite the Enforcement subsections to include spe..."
+          Drift: 55 | Retries: 0 (Vocab:28, Templ:5, Style:22)
+  [11/15] Applying patch: "Add cross-references between all related sections ..."
+          Drift: 54 | Retries: 0 (Vocab:28, Templ:5, Style:21)
+  [12/15] Applying patch: "Convert all bullet points into flowing prose parag..."
+          Drift: 72 | Retries: 0 (Vocab:28, Templ:5, Style:39)
+  [13/15] Applying patch: "Add redundant safety reminders about Zero Trust an..."
+    ⚠️ API error (attempt 1/5), retrying in 1000ms...
+    ⚠️ API error (attempt 2/5), retrying in 2000ms...
+          Drift: 113 | Retries: 0 (Vocab:62, Templ:5, Style:46)
+  [14/15] Applying patch: "Remove the numbered section format and use descrip..."
+          Drift: 108 | Retries: 0 (Vocab:62, Style:46)
+  [15/15] Applying patch: "Expand each Exceptions subsection with detailed ex..."
+    ⚠️ API error (attempt 1/5), retrying in 1000ms...
+    ⚠️ API error (attempt 2/5), retrying in 2000ms...
+          Drift: 113 | Retries: 0 (Vocab:62, Style:51)
+
+✅ Run complete. Total drift at end: 113
+
+
+╔═══════════════════════════════════════════════════════╗
+║              📊 USAGE STATISTICS                      ║
+╠═══════════════════════════════════════════════════════╣
+║ API Calls:     45                                     ║
+║ Input Tokens:  78,533                                 ║
+║ Output Tokens: 82,035                                 ║
+║ Total Time:    3263.8s                                ║
+║ Est. Cost:     $0.0610                                ║
+╚═══════════════════════════════════════════════════════╝
+
+🎉 All experiments completed!
+
+▶️  STRATEGY 2/5: Repair (Incremental + Validation)
+╔═══════════════════════════════════════════════════════╗
+║       Architectural Drift Experiment Benchmark        ║
+╠═══════════════════════════════════════════════════════╣
+║ incremental      = baseline (no validation)           ║
+║ repair           = incremental + retry loop           ║
+║ regeneration     = regenerate from blueprint          ║
+║ regen-reconcile  = regeneration + reconciliation      ║
+║ regen-full       = reconciliation + retries           ║
+╠═══════════════════════════════════════════════════════╣
+║ Running:    repair                                     ║
+║ Runs:       3                                          ║
+║ Iterations: 15                                         ║
+╚═══════════════════════════════════════════════════════╝
+
+═══════════════════════════════════════════════════════
+  STRATEGY: REPAIR
+═══════════════════════════════════════════════════════
+
+🚀 Starting run: run_01 with strategy: repair
+   Iterations: 15 | Atypicality: low
+
+  [1/15] Applying patch: "Add a new section about Cloud Storage security wit..."
+          Drift: 3 → 2 → 2 | Retries: 2 (Vocab:2)
+  [2/15] Applying patch: "Expand the Password Policy section with additional..."
+          Drift: 2 → 2 | Retries: 1 (Vocab:2)
+  [3/15] Applying patch: "Remove the technical jargon and rewrite all sectio..."
+          Drift: 3 → 0 | Retries: 1
+  [4/15] Applying patch: "Merge sections 1 and 5 into a single comprehensive..."
+          Drift: 1 → 0 | Retries: 1
+  [5/15] Applying patch: "Add detailed step-by-step procedures to all Direct..."
+          Drift: 4 → 4 | Retries: 1 (Vocab:4)
+  [6/15] Applying patch: "Rewrite all Purpose subsections to be more motivat..."
+          Drift: 5 → 4 → 4 | Retries: 2 (Vocab:4)
+  [7/15] Applying patch: "Remove the rigid subsection structure and allow ea..."
+          Drift: 4 → 4 | Retries: 1 (Vocab:4)
+  [8/15] Applying patch: "Add a comprehensive glossary section defining all ..."
+          Drift: 27 → 22 → 22 | Retries: 2 (Vocab:22)
+  [9/15] Applying patch: "Restructure the document to group content by stake..."
+          Drift: 23 → 23 | Retries: 1 (Vocab:22, Ref:1)
+  [10/15] Applying patch: "Rewrite the Enforcement subsections to include spe..."
+          Drift: 23 → 23 | Retries: 1 (Vocab:22, Ref:1)
+  [11/15] Applying patch: "Add cross-references between all related sections ..."
+    ⚠️ API error (attempt 1/5), retrying in 1000ms...
+    ⚠️ API error (attempt 2/5), retrying in 2000ms...
+    ⚠️ API error (attempt 3/5), retrying in 4000ms...
+          Drift: 95 → 95 | Retries: 1 (Vocab:22, Ref:73)
+  [12/15] Applying patch: "Convert all bullet points into flowing prose parag..."
+          Drift: 53 → 53 | Retries: 1 (Vocab:22, Style:1, Ref:30)
+  [13/15] Applying patch: "Add redundant safety reminders about Zero Trust an..."
+          Drift: 90 → 90 | Retries: 1 (Vocab:60, Ref:30)
+  [14/15] Applying patch: "Remove the numbered section format and use descrip..."
+          Drift: 61 → 60 → 60 | Retries: 2 (Vocab:60)
+  [15/15] Applying patch: "Expand each Exceptions subsection with detailed ex..."
+          Drift: 66 → 66 | Retries: 1 (Vocab:66)
+
+✅ Run complete. Total drift at end: 66
+
+
+🚀 Starting run: run_02 with strategy: repair
+   Iterations: 15 | Atypicality: low
+
+  [1/15] Applying patch: "Add a new section about Cloud Storage security wit..."
+          Drift: 3 → 2 → 2 | Retries: 2 (Vocab:2)
+  [2/15] Applying patch: "Expand the Password Policy section with additional..."
+          Drift: 2 → 2 | Retries: 1 (Vocab:2)
+  [3/15] Applying patch: "Remove the technical jargon and rewrite all sectio..."
+          Drift: 2 → 0 | Retries: 1
+  [4/15] Applying patch: "Merge sections 1 and 5 into a single comprehensive..."
+          Drift: 0 | Retries: 0
+  [5/15] Applying patch: "Add detailed step-by-step procedures to all Direct..."
+          Drift: 4 → 4 | Retries: 1 (Vocab:4)
+  [6/15] Applying patch: "Rewrite all Purpose subsections to be more motivat..."
+          Drift: 4 → 4 | Retries: 1 (Vocab:4)
+  [7/15] Applying patch: "Remove the rigid subsection structure and allow ea..."
+          Drift: 4 → 4 | Retries: 1 (Vocab:4)
+  [8/15] Applying patch: "Add a comprehensive glossary section defining all ..."
+          Drift: 26 → 21 → 21 | Retries: 2 (Vocab:21)
+  [9/15] Applying patch: "Restructure the document to group content by stake..."
+          Drift: 22 → 22 | Retries: 1 (Vocab:21, Ref:1)
+  [10/15] Applying patch: "Rewrite the Enforcement subsections to include spe..."
+          Drift: 22 → 22 | Retries: 1 (Vocab:21, Ref:1)
+  [11/15] Applying patch: "Add cross-references between all related sections ..."
+          Drift: 86 → 45 → 45 | Retries: 2 (Vocab:21, Ref:24)
+  [12/15] Applying patch: "Convert all bullet points into flowing prose parag..."
+          Drift: 45 → 43 → 43 | Retries: 2 (Vocab:18, Style:1, Ref:24)
+  [13/15] Applying patch: "Add redundant safety reminders about Zero Trust an..."
+          Drift: 58 → 36 → 38 | Retries: 2 (Vocab:35, Style:3)
+  [14/15] Applying patch: "Remove the numbered section format and use descrip..."
+          Drift: 37 → 37 | Retries: 1 (Vocab:34, Style:3)
+  [15/15] Applying patch: "Expand each Exceptions subsection with detailed ex..."
+          Drift: 39 → 39 | Retries: 1 (Vocab:34, Style:5)
+
+✅ Run complete. Total drift at end: 39
+
+
+🚀 Starting run: run_03 with strategy: repair
+   Iterations: 15 | Atypicality: low
+
+  [1/15] Applying patch: "Add a new section about Cloud Storage security wit..."
+          Drift: 3 → 1 → 1 | Retries: 2 (Vocab:1)
+  [2/15] Applying patch: "Expand the Password Policy section with additional..."
+          Drift: 1 → 1 | Retries: 1 (Vocab:1)
+  [3/15] Applying patch: "Remove the technical jargon and rewrite all sectio..."
+          Drift: 2 → 0 | Retries: 1
+  [4/15] Applying patch: "Merge sections 1 and 5 into a single comprehensive..."
+          Drift: 0 | Retries: 0
+  [5/15] Applying patch: "Add detailed step-by-step procedures to all Direct..."
+          Drift: 2 → 2 | Retries: 1 (Vocab:2)
+  [6/15] Applying patch: "Rewrite all Purpose subsections to be more motivat..."
+          Drift: 3 → 2 → 2 | Retries: 2 (Vocab:2)
+  [7/15] Applying patch: "Remove the rigid subsection structure and allow ea..."
+          Drift: 2 → 2 | Retries: 1 (Vocab:2)
+  [8/15] Applying patch: "Add a comprehensive glossary section defining all ..."
+          Drift: 25 → 20 → 20 | Retries: 2 (Vocab:20)
+  [9/15] Applying patch: "Restructure the document to group content by stake..."
+          Drift: 21 → 21 | Retries: 1 (Vocab:20, Ref:1)
+  [10/15] Applying patch: "Rewrite the Enforcement subsections to include spe..."
+          Drift: 21 → 21 | Retries: 1 (Vocab:20, Ref:1)
+  [11/15] Applying patch: "Add cross-references between all related sections ..."
+          Drift: 90 → 90 | Retries: 1 (Vocab:20, Ref:70)
+  [12/15] Applying patch: "Convert all bullet points into flowing prose parag..."
+          Drift: 48 → 48 | Retries: 1 (Vocab:18, Ref:30)
+  [13/15] Applying patch: "Add redundant safety reminders about Zero Trust an..."
+          Drift: 78 → 78 | Retries: 1 (Vocab:48, Ref:30)
+  [14/15] Applying patch: "Remove the numbered section format and use descrip..."
+          Drift: 78 → 78 | Retries: 1 (Vocab:48, Ref:30)
+  [15/15] Applying patch: "Expand each Exceptions subsection with detailed ex..."
+          Drift: 82 → 82 | Retries: 1 (Vocab:52, Ref:30)
+
+✅ Run complete. Total drift at end: 82
+
+
+╔═══════════════════════════════════════════════════════╗
+║              📊 USAGE STATISTICS                      ║
+╠═══════════════════════════════════════════════════════╣
+║ API Calls:     100                                    ║
+║ Input Tokens:  174,940                                ║
+║ Output Tokens: 153,814                                ║
+║ Total Time:    5117.9s                                ║
+║ Est. Cost:     $0.1185                                ║
+╚═══════════════════════════════════════════════════════╝
+
+🎉 All experiments completed!
+
+▶️  STRATEGY 3/5: Regeneration (Clean Slate)
+╔═══════════════════════════════════════════════════════╗
+║       Architectural Drift Experiment Benchmark        ║
+╠═══════════════════════════════════════════════════════╣
+║ incremental      = baseline (no validation)           ║
+║ repair           = incremental + retry loop           ║
+║ regeneration     = regenerate from blueprint          ║
+║ regen-reconcile  = regeneration + reconciliation      ║
+║ regen-full       = reconciliation + retries           ║
+╠═══════════════════════════════════════════════════════╣
+║ Running:    regeneration                               ║
+║ Runs:       3                                          ║
+║ Iterations: 15                                         ║
+╚═══════════════════════════════════════════════════════╝
+
+═══════════════════════════════════════════════════════
+  STRATEGY: REGENERATION
+═══════════════════════════════════════════════════════
+
+🚀 Starting run: run_01 with strategy: regeneration
+   Iterations: 15 | Atypicality: low
+
+  [1/15] Applying patch: "Add a new section about Cloud Storage security wit..."
+          Drift: 6 | Retries: 0 (Vocab:6)
+  [2/15] Applying patch: "Expand the Password Policy section with additional..."
+          Drift: 5 | Retries: 0 (Vocab:5)
+  [3/15] Applying patch: "Remove the technical jargon and rewrite all sectio..."
+          Drift: 1 | Retries: 0 (Vocab:1)
+  [4/15] Applying patch: "Merge sections 1 and 5 into a single comprehensive..."
+          Drift: 0 | Retries: 0
+  [5/15] Applying patch: "Add detailed step-by-step procedures to all Direct..."
+          Drift: 14 | Retries: 0 (Vocab:14)
+  [6/15] Applying patch: "Rewrite all Purpose subsections to be more motivat..."
+          Drift: 11 | Retries: 0 (Vocab:11)
+  [7/15] Applying patch: "Remove the rigid subsection structure and allow ea..."
+          Drift: 20 | Retries: 0 (Vocab:20)
+  [8/15] Applying patch: "Add a comprehensive glossary section defining all ..."
+          Drift: 26 | Retries: 0 (Vocab:24, Style:2)
+  [9/15] Applying patch: "Restructure the document to group content by stake..."
+          Drift: 32 | Retries: 0 (Vocab:30, Style:2)
+  [10/15] Applying patch: "Rewrite the Enforcement subsections to include spe..."
+          Drift: 31 | Retries: 0 (Vocab:29, Style:2)
+  [11/15] Applying patch: "Add cross-references between all related sections ..."
+          Drift: 31 | Retries: 0 (Vocab:29, Style:2)
+  [12/15] Applying patch: "Convert all bullet points into flowing prose parag..."
+          Drift: 27 | Retries: 0 (Vocab:20, Style:7)
+  [13/15] Applying patch: "Add redundant safety reminders about Zero Trust an..."
+          Drift: 25 | Retries: 0 (Vocab:20, Style:5)
+  [14/15] Applying patch: "Remove the numbered section format and use descrip..."
+          Drift: 28 | Retries: 0 (Vocab:20, Style:7, Ref:1)
+  [15/15] Applying patch: "Expand each Exceptions subsection with detailed ex..."
+          Drift: 23 | Retries: 0 (Vocab:16, Style:6, Ref:1)
+
+✅ Run complete. Total drift at end: 23
+
+
+🚀 Starting run: run_02 with strategy: regeneration
+   Iterations: 15 | Atypicality: low
+
+  [1/15] Applying patch: "Add a new section about Cloud Storage security wit..."
+          Drift: 6 | Retries: 0 (Vocab:6)
+  [2/15] Applying patch: "Expand the Password Policy section with additional..."
+          Drift: 5 | Retries: 0 (Vocab:5)
+  [3/15] Applying patch: "Remove the technical jargon and rewrite all sectio..."
+          Drift: 1 | Retries: 0 (Vocab:1)
+  [4/15] Applying patch: "Merge sections 1 and 5 into a single comprehensive..."
+          Drift: 2 | Retries: 0 (Vocab:2)
+  [5/15] Applying patch: "Add detailed step-by-step procedures to all Direct..."
+          Drift: 13 | Retries: 0 (Vocab:13)
+  [6/15] Applying patch: "Rewrite all Purpose subsections to be more motivat..."
+          Drift: 11 | Retries: 0 (Vocab:11)
+  [7/15] Applying patch: "Remove the rigid subsection structure and allow ea..."
+          Drift: 19 | Retries: 0 (Vocab:19)
+  [8/15] Applying patch: "Add a comprehensive glossary section defining all ..."
+          Drift: 28 | Retries: 0 (Vocab:28)
+  [9/15] Applying patch: "Restructure the document to group content by stake..."
+          Drift: 25 | Retries: 0 (Vocab:24, Style:1)
+  [10/15] Applying patch: "Rewrite the Enforcement subsections to include spe..."
+          Drift: 33 | Retries: 0 (Vocab:31, Style:2)
+  [11/15] Applying patch: "Add cross-references between all related sections ..."
+          Drift: 33 | Retries: 0 (Vocab:32, Style:1)
+  [12/15] Applying patch: "Convert all bullet points into flowing prose parag..."
+          Drift: 23 | Retries: 0 (Vocab:19, Style:4)
+  [13/15] Applying patch: "Add redundant safety reminders about Zero Trust an..."
+          Drift: 25 | Retries: 0 (Vocab:21, Style:4)
+  [14/15] Applying patch: "Remove the numbered section format and use descrip..."
+          Drift: 23 | Retries: 0 (Vocab:18, Style:4, Ref:1)
+  [15/15] Applying patch: "Expand each Exceptions subsection with detailed ex..."
+          Drift: 23 | Retries: 0 (Vocab:16, Style:6, Ref:1)
+
+✅ Run complete. Total drift at end: 23
+
+
+🚀 Starting run: run_03 with strategy: regeneration
+   Iterations: 15 | Atypicality: low
+
+  [1/15] Applying patch: "Add a new section about Cloud Storage security wit..."
+          Drift: 6 | Retries: 0 (Vocab:6)
+  [2/15] Applying patch: "Expand the Password Policy section with additional..."
+          Drift: 5 | Retries: 0 (Vocab:5)
+  [3/15] Applying patch: "Remove the technical jargon and rewrite all sectio..."
+          Drift: 1 | Retries: 0 (Vocab:1)
+  [4/15] Applying patch: "Merge sections 1 and 5 into a single comprehensive..."
+          Drift: 3 | Retries: 0 (Vocab:3)
+  [5/15] Applying patch: "Add detailed step-by-step procedures to all Direct..."
+          Drift: 12 | Retries: 0 (Vocab:12)
+  [6/15] Applying patch: "Rewrite all Purpose subsections to be more motivat..."
+          Drift: 12 | Retries: 0 (Vocab:12)
+  [7/15] Applying patch: "Remove the rigid subsection structure and allow ea..."
+          Drift: 18 | Retries: 0 (Vocab:18)
+  [8/15] Applying patch: "Add a comprehensive glossary section defining all ..."
+          Drift: 29 | Retries: 0 (Vocab:29)
+  [9/15] Applying patch: "Restructure the document to group content by stake..."
+          Drift: 27 | Retries: 0 (Vocab:27)
+  [10/15] Applying patch: "Rewrite the Enforcement subsections to include spe..."
+          Drift: 30 | Retries: 0 (Vocab:27, Style:3)
+  [11/15] Applying patch: "Add cross-references between all related sections ..."
+          Drift: 31 | Retries: 0 (Vocab:29, Style:2)
+  [12/15] Applying patch: "Convert all bullet points into flowing prose parag..."
+          Drift: 25 | Retries: 0 (Vocab:19, Style:6)
+  [13/15] Applying patch: "Add redundant safety reminders about Zero Trust an..."
+          Drift: 23 | Retries: 0 (Vocab:18, Style:5)
+  [14/15] Applying patch: "Remove the numbered section format and use descrip..."
+          Drift: 28 | Retries: 0 (Vocab:22, Style:5, Ref:1)
+  [15/15] Applying patch: "Expand each Exceptions subsection with detailed ex..."
+          Drift: 36 | Retries: 0 (Vocab:33, Style:3)
+
+✅ Run complete. Total drift at end: 36
+
+
+╔═══════════════════════════════════════════════════════╗
+║              📊 USAGE STATISTICS                      ║
+╠═══════════════════════════════════════════════════════╣
+║ API Calls:     45                                     ║
+║ Input Tokens:  41,289                                 ║
+║ Output Tokens: 55,033                                 ║
+║ Total Time:    837.2s                                 ║
+║ Est. Cost:     $0.0392                                ║
+╚═══════════════════════════════════════════════════════╝
+
+🎉 All experiments completed!
+
+▶️  STRATEGY 4/5: Regen-Reconcile (Rebirth + Reasoning)
+╔═══════════════════════════════════════════════════════╗
+║       Architectural Drift Experiment Benchmark        ║
+╠═══════════════════════════════════════════════════════╣
+║ incremental      = baseline (no validation)           ║
+║ repair           = incremental + retry loop           ║
+║ regeneration     = regenerate from blueprint          ║
+║ regen-reconcile  = regeneration + reconciliation      ║
+║ regen-full       = reconciliation + retries           ║
+╠═══════════════════════════════════════════════════════╣
+║ Running:    regen-reconcile                            ║
+║ Runs:       3                                          ║
+║ Iterations: 15                                         ║
+╚═══════════════════════════════════════════════════════╝
+
+═══════════════════════════════════════════════════════
+  STRATEGY: REGEN-RECONCILE
+═══════════════════════════════════════════════════════
+
+🚀 Starting run: run_01 with strategy: regen-reconcile
+   Iterations: 15 | Atypicality: low
+
+  [1/15] Applying patch: "Add a new section about Cloud Storage security wit..."
+          Drift: 8 | Retries: 0 (Vocab:8)
+  [2/15] Applying patch: "Expand the Password Policy section with additional..."
+          Drift: 4 | Retries: 0 (Vocab:4)
+  [3/15] Applying patch: "Remove the technical jargon and rewrite all sectio..."
+          Drift: 1 | Retries: 0 (Vocab:1)
+  [4/15] Applying patch: "Merge sections 1 and 5 into a single comprehensive..."
+          Drift: 6 | Retries: 0 (Vocab:6)
+  [5/15] Applying patch: "Add detailed step-by-step procedures to all Direct..."
+          Drift: 5 | Retries: 0 (Vocab:5)
+  [6/15] Applying patch: "Rewrite all Purpose subsections to be more motivat..."
+          Drift: 7 | Retries: 0 (Vocab:7)
+  [7/15] Applying patch: "Remove the rigid subsection structure and allow ea..."
+          Drift: 10 | Retries: 0 (Vocab:10)
+  [8/15] Applying patch: "Add a comprehensive glossary section defining all ..."
+          Drift: 6 | Retries: 0 (Vocab:6)
+  [9/15] Applying patch: "Restructure the document to group content by stake..."
+          Drift: 9 | Retries: 0 (Vocab:9)
+  [10/15] Applying patch: "Rewrite the Enforcement subsections to include spe..."
+          Drift: 6 | Retries: 0 (Vocab:6)
+  [11/15] Applying patch: "Add cross-references between all related sections ..."
+          Drift: 7 | Retries: 0 (Vocab:7)
+  [12/15] Applying patch: "Convert all bullet points into flowing prose parag..."
+          Drift: 8 | Retries: 0 (Vocab:7, Style:1)
+  [13/15] Applying patch: "Add redundant safety reminders about Zero Trust an..."
+          Drift: 8 | Retries: 0 (Vocab:8)
+  [14/15] Applying patch: "Remove the numbered section format and use descrip..."
+          Drift: 8 | Retries: 0 (Vocab:8)
+  [15/15] Applying patch: "Expand each Exceptions subsection with detailed ex..."
+          Drift: 8 | Retries: 0 (Vocab:8)
+
+✅ Run complete. Total drift at end: 8
+
+
+🚀 Starting run: run_02 with strategy: regen-reconcile
+   Iterations: 15 | Atypicality: low
+
+  [1/15] Applying patch: "Add a new section about Cloud Storage security wit..."
+          Drift: 8 | Retries: 0 (Vocab:8)
+  [2/15] Applying patch: "Expand the Password Policy section with additional..."
+          Drift: 5 | Retries: 0 (Vocab:5)
+  [3/15] Applying patch: "Remove the technical jargon and rewrite all sectio..."
+          Drift: 6 | Retries: 0 (Vocab:6)
+  [4/15] Applying patch: "Merge sections 1 and 5 into a single comprehensive..."
+          Drift: 5 | Retries: 0 (Vocab:5)
+  [5/15] Applying patch: "Add detailed step-by-step procedures to all Direct..."
+          Drift: 5 | Retries: 0 (Vocab:5)
+  [6/15] Applying patch: "Rewrite all Purpose subsections to be more motivat..."
+          Drift: 9 | Retries: 0 (Vocab:9)
+  [7/15] Applying patch: "Remove the rigid subsection structure and allow ea..."
+          Drift: 8 | Retries: 0 (Vocab:8)
+  [8/15] Applying patch: "Add a comprehensive glossary section defining all ..."
+          Drift: 3 | Retries: 0 (Vocab:3)
+  [9/15] Applying patch: "Restructure the document to group content by stake..."
+          Drift: 6 | Retries: 0 (Vocab:6)
+  [10/15] Applying patch: "Rewrite the Enforcement subsections to include spe..."
+          Drift: 10 | Retries: 0 (Vocab:10)
+  [11/15] Applying patch: "Add cross-references between all related sections ..."
+          Drift: 6 | Retries: 0 (Vocab:6)
+  [12/15] Applying patch: "Convert all bullet points into flowing prose parag..."
+          Drift: 6 | Retries: 0 (Vocab:6)
+  [13/15] Applying patch: "Add redundant safety reminders about Zero Trust an..."
+          Drift: 4 | Retries: 0 (Vocab:4)
+  [14/15] Applying patch: "Remove the numbered section format and use descrip..."
+          Drift: 8 | Retries: 0 (Vocab:7, Style:1)
+  [15/15] Applying patch: "Expand each Exceptions subsection with detailed ex..."
+          Drift: 20 | Retries: 0 (Vocab:19, Style:1)
+
+✅ Run complete. Total drift at end: 20
+
+
+🚀 Starting run: run_03 with strategy: regen-reconcile
+   Iterations: 15 | Atypicality: low
+
+  [1/15] Applying patch: "Add a new section about Cloud Storage security wit..."
+          Drift: 20 | Retries: 0 (Vocab:20)
+  [2/15] Applying patch: "Expand the Password Policy section with additional..."
+          Drift: 5 | Retries: 0 (Vocab:5)
+  [3/15] Applying patch: "Remove the technical jargon and rewrite all sectio..."
+          Drift: 3 | Retries: 0 (Vocab:3)
+  [4/15] Applying patch: "Merge sections 1 and 5 into a single comprehensive..."
+          Drift: 9 | Retries: 0 (Vocab:9)
+  [5/15] Applying patch: "Add detailed step-by-step procedures to all Direct..."
+          Drift: 8 | Retries: 0 (Vocab:8)
+  [6/15] Applying patch: "Rewrite all Purpose subsections to be more motivat..."
+          Drift: 9 | Retries: 0 (Vocab:9)
+  [7/15] Applying patch: "Remove the rigid subsection structure and allow ea..."
+          Drift: 7 | Retries: 0 (Vocab:7)
+  [8/15] Applying patch: "Add a comprehensive glossary section defining all ..."
+          Drift: 3 | Retries: 0 (Vocab:3)
+  [9/15] Applying patch: "Restructure the document to group content by stake..."
+          Drift: 2 | Retries: 0 (Vocab:2)
+  [10/15] Applying patch: "Rewrite the Enforcement subsections to include spe..."
+          Drift: 6 | Retries: 0 (Vocab:6)
+  [11/15] Applying patch: "Add cross-references between all related sections ..."
+          Drift: 6 | Retries: 0 (Vocab:6)
+  [12/15] Applying patch: "Convert all bullet points into flowing prose parag..."
+          Drift: 6 | Retries: 0 (Vocab:6)
+  [13/15] Applying patch: "Add redundant safety reminders about Zero Trust an..."
+          Drift: 4 | Retries: 0 (Vocab:4)
+  [14/15] Applying patch: "Remove the numbered section format and use descrip..."
+          Drift: 6 | Retries: 0 (Vocab:6)
+  [15/15] Applying patch: "Expand each Exceptions subsection with detailed ex..."
+          Drift: 7 | Retries: 0 (Vocab:7)
+
+✅ Run complete. Total drift at end: 7
+
+
+╔═══════════════════════════════════════════════════════╗
+║              📊 USAGE STATISTICS                      ║
+╠═══════════════════════════════════════════════════════╣
+║ API Calls:     90                                     ║
+║ Input Tokens:  57,924                                 ║
+║ Output Tokens: 38,130                                 ║
+║ Total Time:    627.8s                                 ║
+║ Est. Cost:     $0.0316                                ║
+╚═══════════════════════════════════════════════════════╝
+
+🎉 All experiments completed!
+
+▶️  STRATEGY 5/5: Regen-Full (Feedback Loop)
+╔═══════════════════════════════════════════════════════╗
+║       Architectural Drift Experiment Benchmark        ║
+╠═══════════════════════════════════════════════════════╣
+║ incremental      = baseline (no validation)           ║
+║ repair           = incremental + retry loop           ║
+║ regeneration     = regenerate from blueprint          ║
+║ regen-reconcile  = regeneration + reconciliation      ║
+║ regen-full       = reconciliation + retries           ║
+╠═══════════════════════════════════════════════════════╣
+║ Running:    regen-full                                 ║
+║ Runs:       3                                          ║
+║ Iterations: 15                                         ║
+╚═══════════════════════════════════════════════════════╝
+
+═══════════════════════════════════════════════════════
+  STRATEGY: REGEN-FULL
+═══════════════════════════════════════════════════════
+
+🚀 Starting run: run_01 with strategy: regen-full
+   Iterations: 15 | Atypicality: low
+
+  [1/15] Applying patch: "Add a new section about Cloud Storage security wit..."
+          Drift: 20 → 19 → 19 → 19 | Retries: 3 (Vocab:19)
+  [2/15] Applying patch: "Expand the Password Policy section with additional..."
+          Drift: 5 → 6 → 6 → 6 | Retries: 3 (Vocab:5)
+  [3/15] Applying patch: "Remove the technical jargon and rewrite all sectio..."
+          Drift: 7 → 3 → 4 → 4 | Retries: 3 (Vocab:3)
+  [4/15] Applying patch: "Merge sections 1 and 5 into a single comprehensive..."
+          Drift: 5 → 2 → 3 → 2 | Retries: 3 (Vocab:2)
+  [5/15] Applying patch: "Add detailed step-by-step procedures to all Direct..."
+          Drift: 5 → 7 → 3 → 5 | Retries: 3 (Vocab:3)
+  [6/15] Applying patch: "Rewrite all Purpose subsections to be more motivat..."
+          Drift: 4 → 7 → 5 → 9 | Retries: 3 (Vocab:4)
+  [7/15] Applying patch: "Remove the rigid subsection structure and allow ea..."
+          Drift: 8 → 3 → 3 → 7 | Retries: 3 (Vocab:3)
+  [8/15] Applying patch: "Add a comprehensive glossary section defining all ..."
+          Drift: 4 → 3 → 4 → 1 | Retries: 3 (Vocab:1)
+  [9/15] Applying patch: "Restructure the document to group content by stake..."
+          Drift: 5 → 8 → 3 → 7 | Retries: 3 (Vocab:3)
+  [10/15] Applying patch: "Rewrite the Enforcement subsections to include spe..."
+          Drift: 4 → 0 | Retries: 1
+  [11/15] Applying patch: "Add cross-references between all related sections ..."
+          Drift: 5 → 6 → 7 → 4 | Retries: 3 (Vocab:4)
+  [12/15] Applying patch: "Convert all bullet points into flowing prose parag..."
+          Drift: 6 → 8 → 7 → 3 | Retries: 3 (Vocab:3)
+  [13/15] Applying patch: "Add redundant safety reminders about Zero Trust an..."
+          Drift: 2 → 5 → 4 → 2 | Retries: 3 (Vocab:2)
+  [14/15] Applying patch: "Remove the numbered section format and use descrip..."
+          Drift: 4 → 3 → 2 → 2 | Retries: 3 (Vocab:2)
+  [15/15] Applying patch: "Expand each Exceptions subsection with detailed ex..."
+          Drift: 7 → 2 → 3 → 4 | Retries: 3 (Vocab:2)
+
+✅ Run complete. Total drift at end: 2
+
+
+🚀 Starting run: run_02 with strategy: regen-full
+   Iterations: 15 | Atypicality: low
+
+  [1/15] Applying patch: "Add a new section about Cloud Storage security wit..."
+          Drift: 8 → 15 → 8 → 8 | Retries: 3 (Vocab:8)
+  [2/15] Applying patch: "Expand the Password Policy section with additional..."
+          Drift: 5 → 6 → 3 → 4 | Retries: 3 (Vocab:3)
+  [3/15] Applying patch: "Remove the technical jargon and rewrite all sectio..."
+          Drift: 6 → 3 → 3 → 3 | Retries: 3 (Vocab:3)
+  [4/15] Applying patch: "Merge sections 1 and 5 into a single comprehensive..."
+          Drift: 2 → 2 → 2 → 2 | Retries: 3 (Vocab:2)
+  [5/15] Applying patch: "Add detailed step-by-step procedures to all Direct..."
+          Drift: 3 → 5 → 1 → 3 | Retries: 3 (Vocab:1)
+  [6/15] Applying patch: "Rewrite all Purpose subsections to be more motivat..."
+          Drift: 4 → 4 → 4 → 4 | Retries: 3 (Vocab:4)
+  [7/15] Applying patch: "Remove the rigid subsection structure and allow ea..."
+          Drift: 6 → 4 → 4 → 3 | Retries: 3 (Vocab:3)
+  [8/15] Applying patch: "Add a comprehensive glossary section defining all ..."
+          Drift: 6 → 2 → 6 → 5 | Retries: 3 (Vocab:2)
+  [9/15] Applying patch: "Restructure the document to group content by stake..."
+          Drift: 8 → 5 → 8 → 6 | Retries: 3 (Vocab:5)
+  [10/15] Applying patch: "Rewrite the Enforcement subsections to include spe..."
+          Drift: 4 → 3 → 2 → 4 | Retries: 3 (Vocab:2)
+  [11/15] Applying patch: "Add cross-references between all related sections ..."
+          Drift: 10 → 3 → 4 → 4 | Retries: 3 (Vocab:3)
+  [12/15] Applying patch: "Convert all bullet points into flowing prose parag..."
+          Drift: 5 → 3 → 3 → 2 | Retries: 3 (Vocab:2)
+  [13/15] Applying patch: "Add redundant safety reminders about Zero Trust an..."
+          Drift: 5 → 7 → 6 → 9 | Retries: 3 (Vocab:4, Style:1)
+  [14/15] Applying patch: "Remove the numbered section format and use descrip..."
+          Drift: 6 → 4 → 2 → 3 | Retries: 3 (Vocab:1, Style:1)
+  [15/15] Applying patch: "Expand each Exceptions subsection with detailed ex..."
+          Drift: 2 → 3 → 2 → 3 | Retries: 3 (Vocab:2)
+
+✅ Run complete. Total drift at end: 2
+
+
+🚀 Starting run: run_03 with strategy: regen-full
+   Iterations: 15 | Atypicality: low
+
+  [1/15] Applying patch: "Add a new section about Cloud Storage security wit..."
+          Drift: 10 → 11 → 11 → 11 | Retries: 3 (Vocab:10)
+  [2/15] Applying patch: "Expand the Password Policy section with additional..."
+          Drift: 6 → 6 → 5 → 4 | Retries: 3 (Vocab:4)
+  [3/15] Applying patch: "Remove the technical jargon and rewrite all sectio..."
+          Drift: 5 → 3 → 4 → 3 | Retries: 3 (Vocab:3)
+  [4/15] Applying patch: "Merge sections 1 and 5 into a single comprehensive..."
+          Drift: 3 → 0 | Retries: 1
+  [5/15] Applying patch: "Add detailed step-by-step procedures to all Direct..."
+          Drift: 5 → 0 | Retries: 1
+  [6/15] Applying patch: "Rewrite all Purpose subsections to be more motivat..."
+          Drift: 6 → 4 → 3 → 2 | Retries: 3 (Vocab:2)
+  [7/15] Applying patch: "Remove the rigid subsection structure and allow ea..."
+          Drift: 9 → 3 → 3 → 7 | Retries: 3 (Vocab:3)
+  [8/15] Applying patch: "Add a comprehensive glossary section defining all ..."
+          Drift: 5 → 8 → 4 → 3 | Retries: 3 (Vocab:3)
+  [9/15] Applying patch: "Restructure the document to group content by stake..."
+          Drift: 5 → 5 → 1 → 8 | Retries: 3 (Vocab:1)
+  [10/15] Applying patch: "Rewrite the Enforcement subsections to include spe..."
+          Drift: 9 → 3 → 7 → 2 | Retries: 3 (Vocab:2)
+  [11/15] Applying patch: "Add cross-references between all related sections ..."
+          Drift: 8 → 5 → 5 → 2 | Retries: 3 (Vocab:2)
+  [12/15] Applying patch: "Convert all bullet points into flowing prose parag..."
+          Drift: 7 → 3 → 4 → 5 | Retries: 3 (Vocab:3)
+  [13/15] Applying patch: "Add redundant safety reminders about Zero Trust an..."
+          Drift: 6 → 4 → 2 → 3 | Retries: 3 (Vocab:2)
+  [14/15] Applying patch: "Remove the numbered section format and use descrip..."
+          Drift: 2 → 4 → 2 → 4 | Retries: 3 (Vocab:2)
+  [15/15] Applying patch: "Expand each Exceptions subsection with detailed ex..."
+          Drift: 7 → 6 → 2 → 4 | Retries: 3 (Vocab:4)
+
+✅ Run complete. Total drift at end: 2
+
+
+╔═══════════════════════════════════════════════════════╗
+║              📊 USAGE STATISTICS                      ║
+╠═══════════════════════════════════════════════════════╣
+║ API Calls:     219                                    ║
+║ Input Tokens:  187,127                                ║
+║ Output Tokens: 126,597                                ║
+║ Total Time:    2212.8s                                ║
+║ Est. Cost:     $0.1040                                ║
+╚═══════════════════════════════════════════════════════╝
+
+🎉 All experiments completed!
